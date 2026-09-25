@@ -13697,7 +13697,7 @@ INTEL PMIC GPIO DRIVERS
 M:	Andy Shevchenko <andy@kernel.org>
 S:	Supported
 T:	git git://git.kernel.org/pub/scm/linux/kernel/git/andy/linux-gpio-intel.git
-F:	drivers/gpio/gpio-*cove.c
+F:	drivers/gpio/intel/pmic/
 
 INTEL PMIC MULTIFUNCTION DEVICE DRIVERS
 M:	Andy Shevchenko <andy@kernel.org>
@@ -30105,7 +30105,7 @@ WHISKEYCOVE PMIC GPIO DRIVER
 M:	Kuppuswamy Sathyanarayanan <sathyanarayanan.kuppuswamy@linux.intel.com>
 L:	linux-gpio@vger.kernel.org
 S:	Maintained
-F:	drivers/gpio/gpio-wcove.c
+F:	drivers/gpio/intel/pmic/gpio-wcove.c
 
 WHWAVE RTC DRIVER
 M:	Dianlong Li <long17.cool@163.com>

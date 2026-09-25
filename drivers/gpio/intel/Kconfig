@@ -35,3 +35,5 @@ config GPIO_MERRIFIELD
 	  Say Y here to support Intel Merrifield GPIO.
 
 endif
+
+source "drivers/gpio/intel/pmic/Kconfig"

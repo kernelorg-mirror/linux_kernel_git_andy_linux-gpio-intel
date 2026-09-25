@@ -4,3 +4,5 @@
 obj-$(CONFIG_GPIO_TANGIER)		+= gpio-tangier.o
 obj-$(CONFIG_GPIO_ELKHARTLAKE)		+= gpio-elkhartlake.o
 obj-$(CONFIG_GPIO_MERRIFIELD)		+= gpio-merrifield.o
+
+obj-y				+= pmic/
