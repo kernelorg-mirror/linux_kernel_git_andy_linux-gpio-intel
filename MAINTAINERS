@@ -12845,7 +12845,7 @@ F:	drivers/scsi/ips.*
 ICH LPC AND GPIO DRIVER
 M:	Peter Tyser <ptyser@xes-inc.com>
 S:	Maintained
-F:	drivers/gpio/gpio-ich.c
+F:	drivers/gpio/intel/gpio-ich.c
 F:	drivers/mfd/lpc_ich.c
 
 ICY I2C DRIVER
@@ -13423,10 +13423,6 @@ L:	linux-gpio@vger.kernel.org
 S:	Supported
 T:	git git://git.kernel.org/pub/scm/linux/kernel/git/andy/linux-gpio-intel.git
 F:	drivers/gpio/gpio-graniterapids.c
-F:	drivers/gpio/gpio-ich.c
-F:	drivers/gpio/gpio-ml-ioh.c
-F:	drivers/gpio/gpio-pch.c
-F:	drivers/gpio/gpio-sch.c
 F:	drivers/gpio/gpio-sodaville.c
 F:	drivers/gpio/intel/
 
