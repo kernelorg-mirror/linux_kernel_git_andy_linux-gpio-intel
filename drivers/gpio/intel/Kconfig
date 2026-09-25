@@ -36,6 +36,15 @@ config GPIO_MERRIFIELD
 
 endif
 
+config GPIO_SODAVILLE
+	bool "Intel Sodaville GPIO support"
+	depends on X86 && OF
+	depends on PCI
+	select GPIO_GENERIC
+	select GENERIC_IRQ_CHIP
+	help
+	  Say Y here to support Intel Sodaville GPIO.
+
 # PCH type of drivers
 
 if PCI
