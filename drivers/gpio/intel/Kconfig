@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: GPL-2.0-only
+#
+# Intel GPIO drivers
+#
+
+if HAS_IOMEM
+
+config GPIO_TANGIER
+	tristate
+	select GPIOLIB_IRQCHIP
+	help
+	  GPIO support for Intel Tangier and compatible platforms.
+	  Currently supported:
+	   - Elkhart Lake
+	   - Merrifield
+
+	  If built as a module its name will be gpio-tangier.
+
+config GPIO_ELKHARTLAKE
+	tristate "Intel Elkhart Lake PSE GPIO support"
+	depends on INTEL_EHL_PSE_IO
+	select GPIO_TANGIER
+	help
+	  Select this option to enable GPIO support for Intel Elkhart Lake
+	  PSE GPIO IP.
+
+	  To compile this driver as a module, choose M here: the module will
+	  be called gpio-elkhartlake.
+
+config GPIO_MERRIFIELD
+	tristate "Intel Merrifield GPIO support"
+	depends on X86_INTEL_MID
+	select GPIO_TANGIER
+	help
+	  Say Y here to support Intel Merrifield GPIO.
+
+endif

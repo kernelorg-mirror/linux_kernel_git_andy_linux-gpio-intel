@@ -13422,16 +13422,13 @@ M:	Andy Shevchenko <andy@kernel.org>
 L:	linux-gpio@vger.kernel.org
 S:	Supported
 T:	git git://git.kernel.org/pub/scm/linux/kernel/git/andy/linux-gpio-intel.git
-F:	drivers/gpio/gpio-elkhartlake.c
 F:	drivers/gpio/gpio-graniterapids.c
 F:	drivers/gpio/gpio-ich.c
-F:	drivers/gpio/gpio-merrifield.c
 F:	drivers/gpio/gpio-ml-ioh.c
 F:	drivers/gpio/gpio-pch.c
 F:	drivers/gpio/gpio-sch.c
 F:	drivers/gpio/gpio-sodaville.c
-F:	drivers/gpio/gpio-tangier.c
-F:	drivers/gpio/gpio-tangier.h
+F:	drivers/gpio/intel/
 
 INTEL GPIO GPE DRIVER
 M:	Alan Borzeszkowski <alan.borzeszkowski@linux.intel.com>
@@ -13664,8 +13661,8 @@ F:	arch/x86/pci/intel_mid.c
 F:	arch/x86/platform/intel-mid/
 F:	drivers/dma/hsu/
 F:	drivers/extcon/extcon-intel-mrfld.c
-F:	drivers/gpio/gpio-merrifield.c
-F:	drivers/gpio/gpio-tangier.*
+F:	drivers/gpio/intel/gpio-merrifield.c
+F:	drivers/gpio/intel/gpio-tangier.*
 F:	drivers/iio/adc/intel_mrfld_adc.c
 F:	drivers/mfd/intel_soc_pmic_mrfld.c
 F:	drivers/pinctrl/intel/pinctrl-merrifield.c
